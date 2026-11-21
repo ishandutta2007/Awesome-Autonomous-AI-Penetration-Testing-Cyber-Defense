@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Autonomous-AI-Penetration-Testing-Cyber-Defense/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Autonomous-AI-Penetration-Testing-Cyber-Defense?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Autonomous-AI-Penetration-Testing-Cyber-Defense/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Autonomous-AI-Penetration-Testing-Cyber-Defense?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Autonomous-AI-Penetration-Testing-Cyber-Defense/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Autonomous-AI-Penetration-Testing-Cyber-Defense?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Autonomous-AI-Penetration-Testing-Cyber-Defense/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -68,7 +68,7 @@ Enterprise platforms delivering automated penetration testing, continuous exposu
 
 Curated open-source projects for autonomous offensive AI agents, vulnerability scanning engines, breach & attack simulation platforms, and purple team frameworks.
 
-Repositories are **sorted in descending order by GitHub star count**. Each repository badge links directly to its stargazer community.
+Repositories are **sorted in descending order by GitHub Stars_Count**. Each repository badge links directly to its stargazer community.
 
 1. **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** [![Stars](https://img.shields.io/github/stars/KeygraphHQ/shannon?style=social&color=white)](https://github.com/KeygraphHQ/shannon/stargazers)  
    🤖 Fully autonomous open-source AI penetration testing agent that analyzes source code and live web applications in parallel to discover, exploit, and validate real vulnerabilities with reproducible proof-of-concepts.
@@ -149,7 +149,7 @@ Contributions are warmly encouraged! Help keep this repository comprehensive, fa
 2. 🌿 Create a feature branch (`git checkout -b feature/new-tool`).
 3. 📝 Add or edit your tool entry following the existing format:
    - For **SaaS**: Include product name, URL, 1–2 sentence description, scale/valuation, starting pricing, and free trial / free tier limits.
-   - For **Open-Source**: Include full repository slug `owner/repo`, star badge linking to `/stargazers`, and a concise technical description.
+   - For **Open-Source**: Include full repository slug `owner/repo`, Stars_Badge linking to `/stargazers`, and a concise technical description.
 4. 🚀 Submit a Pull Request with a clear explanation of your additions.
 
 ---
