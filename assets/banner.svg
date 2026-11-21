@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d17" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#fb923c" />
+    </linearGradient>
+
+    <radialGradient id="orb1" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="orb2" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.6"/>
+      <circle cx="40" cy="40" r="1" fill="#38bdf8" fill-opacity="0.3"/>
+    </pattern>
+
+    <style>
+      .title-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 42px;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        fill: #94a3b8;
+      }
+      .tagline-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        fill: #38bdf8;
+      }
+      .pill-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #e2e8f0;
+      }
+      .pulse-circle {
+        animation: pulse 3s infinite ease-in-out;
+      }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: 0.4; }
+        50% { transform: scale(1.15); opacity: 0.8; }
+      }
+      .scan-line {
+        animation: scan 6s linear infinite;
+      }
+      @keyframes scan {
+        0% { transform: translateY(0); opacity: 0; }
+        15% { opacity: 0.7; }
+        85% { opacity: 0.7; }
+        100% { transform: translateY(420px); opacity: 0; }
+      }
+      .floating-node {
+        animation: floatNode 4s ease-in-out infinite alternate;
+      }
+      @keyframes floatNode {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-10px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  <rect width="100%" height="100%" fill="url(#cyberGrid)" />
+
+  <!-- Ambient Dynamic Orbs (Background layer) -->
+  <circle cx="250" cy="120" r="220" fill="url(#orb1)" />
+  <circle cx="950" cy="300" r="260" fill="url(#orb2)" />
+
+  <!-- Animated Matrix Scanning Line (Background) -->
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="url(#primaryGlow)" stroke-width="2" opacity="0.6" class="scan-line" />
+
+  <!-- Connected Attack-Graph Nodes (Background Cyber Network Animation) -->
+  <g opacity="0.25" class="floating-node">
+    <line x1="120" y1="180" x2="260" y2="100" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4 4" />
+    <line x1="260" y1="100" x2="380" y2="160" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="380" y1="160" x2="200" y2="300" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="3 3" />
+    <line x1="860" y1="100" x2="1000" y2="160" stroke="#a855f7" stroke-width="1.5" />
+    <line x1="1000" y1="160" x2="1120" y2="90" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4 4" />
+    <line x1="1000" y1="160" x2="940" y2="310" stroke="#c084fc" stroke-width="1.5" />
+
+    <circle cx="120" cy="180" r="5" fill="#38bdf8" />
+    <circle cx="260" cy="100" r="7" fill="#818cf8" />
+    <circle cx="380" cy="160" r="6" fill="#38bdf8" />
+    <circle cx="200" cy="300" r="8" fill="#c084fc" />
+    <circle cx="860" cy="100" r="6" fill="#a855f7" />
+    <circle cx="1000" cy="160" r="8" fill="#38bdf8" />
+    <circle cx="1120" cy="90" r="5" fill="#c084fc" />
+    <circle cx="940" cy="310" r="7" fill="#f43f5e" />
+  </g>
+
+  <!-- Central Foreground Container (Ensures title/subtitle remain perfectly legible) -->
+  <g transform="translate(600, 195)" text-anchor="middle">
+    <!-- Category Tagline Badge -->
+    <rect x="-190" y="-140" width="380" height="30" rx="15" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" opacity="0.95"/>
+    <circle cx="-165" cy="-125" r="5" fill="#22c55e">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="5" y="-120" class="tagline-text" text-anchor="middle">⚡ Autonomous AI Offensive &amp; Defensive Cyber</text>
+
+    <!-- Main Title with Gradient Glow -->
+    <text x="0" y="-55" class="title-text" fill="url(#primaryGlow)">Autonomous AI Pentesting &amp; Cyber Defense</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="-10" class="subtitle-text">Curated Elite Ecosystem of BAS Platforms, Autonomous Red Teams &amp; Security Validation</text>
+
+    <!-- Feature Tech Pills (Foreground Interactive Cards) -->
+    <g transform="translate(0, 45)">
+      <!-- Pill 1 -->
+      <g transform="translate(-480, 0)">
+        <rect x="0" y="0" width="220" height="42" rx="10" fill="#1e293b" fill-opacity="0.9" stroke="#334155" stroke-width="1.5"/>
+        <circle cx="24" cy="21" r="5" fill="#38bdf8"/>
+        <text x="38" y="26" class="pill-text">🤖 Autonomous Red Teaming</text>
+      </g>
+
+      <!-- Pill 2 -->
+      <g transform="translate(-240, 0)">
+        <rect x="0" y="0" width="225" height="42" rx="10" fill="#1e293b" fill-opacity="0.9" stroke="#334155" stroke-width="1.5"/>
+        <circle cx="24" cy="21" r="5" fill="#818cf8"/>
+        <text x="38" y="26" class="pill-text">⚔️ Adversary Emulation (BAS)</text>
+      </g>
+
+      <!-- Pill 3 -->
+      <g transform="translate(5, 0)">
+        <rect x="0" y="0" width="225" height="42" rx="10" fill="#1e293b" fill-opacity="0.9" stroke="#334155" stroke-width="1.5"/>
+        <circle cx="24" cy="21" r="5" fill="#c084fc"/>
+        <text x="38" y="26" class="pill-text">🛡️ Continuous CTEM &amp; Defense</text>
+      </g>
+
+      <!-- Pill 4 -->
+      <g transform="translate(250, 0)">
+        <rect x="0" y="0" width="230" height="42" rx="10" fill="#1e293b" fill-opacity="0.9" stroke="#334155" stroke-width="1.5"/>
+        <circle cx="24" cy="21" r="5" fill="#f43f5e"/>
+        <text x="38" y="26" class="pill-text">🔍 Exploit &amp; Detection Engines</text>
+      </g>
+    </g>
+
+    <!-- Bottom Status Badges / Metadata -->
+    <g transform="translate(0, 130)">
+      <text x="0" y="0" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#64748b" text-anchor="middle">
+        🛡️ MITRE ATT&amp;CK Mapped • 🎯 Continuous Exposure Management • 🌐 Production-Grade PtaaS &amp; Open-Source
+      </text>
+    </g>
+  </g>
+
+  <!-- Border Frame -->
+  <rect x="1" y="1" width="1198" height="418" rx="12" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.6"/>
+</svg>
